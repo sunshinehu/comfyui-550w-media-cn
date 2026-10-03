@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "node-550w-media-cn"
+version = "3.1.5"
+description = "图片去文字去水印、本地视频去字幕去水印，解析抖音、快手、哔哩哔哩、微博等分享链接；支持 OAuth 或 API Key。"
+requires-python = ">=3.11"
+dependencies = ["requests==2.32.5", "requests-toolbelt==1.0.0", "keyring==25.6.0"]
+license = {file = "LICENSE"}
+classifiers = ["Operating System :: OS Independent"]
+
+[project.urls]
+Repository = "https://github.com/sunshinehu/comfyui-550w-media-cn"
+Documentation = "https://qzm.550wai.cn/agent/"
+
+[tool.comfy]
+PublisherId = "fiftyw-ai"
+DisplayName = "550W AI去字幕去水印"
+Icon = "https://raw.githubusercontent.com/sunshinehu/comfyui-550w-media-cn/main/icon.png"
+
+[tool.setuptools]
+packages = ["comfyui_550w_media"]
+package-dir = {comfyui_550w_media = "."}
